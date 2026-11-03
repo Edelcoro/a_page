@@ -34,10 +34,28 @@
         border: 1px solid dimgray;
         box-shadow: 2px 3px 6px darkgray;
     }
+
+    @keyframes flyAcross {
+        0% {
+            left: -350px; /* Starts off screen left */
+        }
+        100% {
+            left: 100%;  /* Ends off screen right */
+        }
+    }
+
+    /* Animated Paper Plane Rules */
+    img[src="Paper-Airplane.png"] {
+        position: fixed;
+        top: 30%;
+        animation: flyAcross 8s linear forwards;
+    }
 </style>
 </head>
 
 <body>
+<img src="Paper-Airplane.png">
+
 <div id="page">
 <h1>Paper Planes</h1>
 <h2>Created with <a href="https://chatai.com">ChatAI</a> and Canva</h2>
